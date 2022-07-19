@@ -36,15 +36,3 @@ class Motor:
             self.cantidad_combustible = combustible_restante
         else:
             print('Ya no hay combustible!')
-
-
-if __name__ == '__main__':
-    auto = Automovil(modelo='Hb20', marca='Hyndai',
-                     color='Gris', cantidad_pasajeros=4, puerta=5)
-    auto.recargar_tanque(100)
-
-    auto.acelerar('rapida')
-    print(auto._motor.cantidad_combustible)
-
-    auto.acelerar()
-    print(auto._motor.cantidad_combustible)
