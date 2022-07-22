@@ -2,6 +2,8 @@ from abstraccion.contabilidad import Contabilidad
 from instancia.coordenada import Coordenada
 from decomposicion.automovil import Automovil
 from abstraccion.lavadora import Lavadora
+from herencia.rectangulo import Rectangulo
+from herencia.cuadrado import Cuadrado
 
 
 def main() -> None:
@@ -27,8 +29,15 @@ def main() -> None:
     # lavadora = Lavadora()
     # lavadora.lavar()
 
-    contabilidad = Contabilidad()
-    contabilidad.liquidacion_de_documentos(mes_presentacion='Junio')
+    """ Herencia """
+    # rectangulo = Rectangulo(base=3, altura=4)
+    # print(rectangulo.area())
+
+    # cuadrado = Cuadrado(lado=5)
+    # print(cuadrado.area())
+
+    # contabilidad = Contabilidad()
+    # contabilidad.liquidacion_de_documentos(mes_presentacion='Junio')
 
 
 if __name__ == '__main__':
